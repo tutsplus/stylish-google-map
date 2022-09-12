@@ -6,4 +6,4 @@ In this new tutorial, we’ll use the Google Maps JavaScript API and learn how t
 
 **Available on Tuts+ September 2022**
 
-[View demo](https://geomarts.github.io/stylish-google-map/)
+[View demo](https://tutsplus.github.io/stylish-google-map/)
