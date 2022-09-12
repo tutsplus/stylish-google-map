@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>
+			A simple example showing how to build a stylish Google Map with
+			multiple markers
+		</title>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="main.css" />
+	</head>
+
+	<body>
+		<div class="container-fluid">
+			<div class="row align-items-center">
+				<div class="col-md-6 mt-5 mb-3">
+					<h1 class="mb-4">
+						Some of
+						<a
+							href="https://www.adobe.com/about-adobe/contact/offices.html"
+							class="text-body"
+							target="_blank"
+							>Adobe's office locations</a
+						>
+					</h1>
+					<div class="block">
+						<h2 class="mb-3">North America</h2>
+						<div class="row">
+							<div class="col-sm-6 mb-2">
+								<div class="d-flex align-items-center">
+									<img
+										width="24"
+										height="24"
+										src="img/address.svg"
+										alt=""
+										class="me-2"
+									/>
+									<a
+										href=""
+										class="location text-body"
+										data-index="0"
+									>
+										Corporate headquarters
+									</a>
+								</div>
+							</div>
+							<div class="col-sm-6 mb-2">
+								<div class="d-flex align-items-center">
+									<img
+										width="24"
+										height="24"
+										src="img/address.svg"
+										alt=""
+										class="me-2"
+									/>
+									<a
+										href=""
+										class="location text-body"
+										data-index="1"
+										>Los Angeles</a
+									>
+								</div>
+							</div>
+						</div>
+						<hr />
+					</div>
+					<div class="block">
+						<h2 class="mb-3">Asia</h2>
+						<div class="row">
+							<div class="col-sm-6 mb-2">
+								<div class="d-flex align-items-center">
+									<img
+										width="24"
+										height="24"
+										src="img/address.svg"
+										alt=""
+										class="me-2"
+									/>
+									<a
+										href=""
+										class="location text-body"
+										data-index="2"
+									>
+										China - Location1
+									</a>
+								</div>
+							</div>
+							<div class="col-sm-6 mb-2">
+								<div class="d-flex align-items-center">
+									<img
+										width="24"
+										height="24"
+										src="img/address.svg"
+										alt=""
+										class="me-2"
+									/>
+									<a
+										href=""
+										class="location text-body"
+										data-index="3"
+									>
+										China - Location2
+									</a>
+								</div>
+							</div>
+							<div class="col-sm-6 mb-2">
+								<div class="d-flex align-items-center">
+									<img
+										width="24"
+										height="24"
+										src="img/address.svg"
+										alt=""
+										class="me-2"
+									/>
+									<a
+										href=""
+										class="location text-body"
+										data-index="4"
+									>
+										India - Location1
+									</a>
+								</div>
+							</div>
+							<div class="col-sm-6 mb-2">
+								<div class="d-flex align-items-center">
+									<img
+										width="24"
+										height="24"
+										src="img/address.svg"
+										alt=""
+										class="me-2"
+									/>
+									<a
+										href=""
+										class="location text-body"
+										data-index="5"
+									>
+										India - Location2
+									</a>
+								</div>
+							</div>
+						</div>
+						<hr />
+					</div>
+					<div class="block">
+						<h2 class="mb-3">Europe</h2>
+						<div class="row">
+							<div class="col-sm-6 mb-2">
+								<div class="d-flex align-items-center">
+									<img
+										width="24"
+										height="24"
+										src="img/address.svg"
+										alt=""
+										class="me-2"
+									/>
+									<a
+										href=""
+										class="location text-body"
+										data-index="6"
+									>
+										Ireland
+									</a>
+								</div>
+							</div>
+							<div class="col-sm-6 mb-2">
+								<div class="d-flex align-items-center">
+									<img
+										width="24"
+										height="24"
+										src="img/address.svg"
+										alt=""
+										class="me-2"
+									/>
+									<a
+										href=""
+										class="location text-body"
+										data-index="7"
+									>
+										Netherlands
+									</a>
+								</div>
+							</div>
+							<div class="col-sm-6 mb-2">
+								<div class="d-flex align-items-center">
+									<img
+										width="24"
+										height="24"
+										src="img/address.svg"
+										alt=""
+										class="me-2"
+									/>
+									<a
+										href=""
+										class="location text-body"
+										data-index="8"
+									>
+										Poland
+									</a>
+								</div>
+							</div>
+							<div class="col-sm-6 mb-2">
+								<div class="d-flex align-items-center">
+									<img
+										width="24"
+										height="24"
+										src="img/address.svg"
+										alt=""
+										class="me-2"
+									/>
+									<a
+										href=""
+										class="location text-body"
+										data-index="9"
+									>
+										Sweden
+									</a>
+								</div>
+							</div>
+							<div class="col-sm-6 mb-2">
+								<div class="d-flex align-items-center">
+									<img
+										width="24"
+										height="24"
+										src="img/address.svg"
+										alt=""
+										class="me-2"
+									/>
+									<a
+										href=""
+										class="location text-body"
+										data-index="10"
+									>
+										Belgium
+									</a>
+								</div>
+							</div>
+							<div class="col-sm-6 mb-2">
+								<div class="d-flex align-items-center">
+									<img
+										width="24"
+										height="24"
+										src="img/address.svg"
+										alt=""
+										class="me-2"
+									/>
+									<a
+										href=""
+										class="location text-body"
+										data-index="11"
+									>
+										United Kingdom - Location1
+									</a>
+								</div>
+							</div>
+							<div class="col-sm-6 mb-2">
+								<div class="d-flex align-items-center">
+									<img
+										width="24"
+										height="24"
+										src="img/address.svg"
+										alt=""
+										class="me-2"
+									/>
+									<a
+										href=""
+										class="location text-body"
+										data-index="12"
+									>
+										United Kingdom - Location2
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 p-0">
+					<div id="map" class="vh-100"></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="toast-container position-fixed top-0 left-0 p-3">
+			<div
+				role="alert"
+				aria-live="assertive"
+				aria-atomic="true"
+				class="toast show text-bg-primary border-0"
+				data-bs-autohide="false"
+			>
+				<div class="d-flex">
+					<div class="toast-body">
+						The map might stop working at any time. Replace the
+						current API key with yours. Get a Google Maps API key by
+						following
+						<a
+							href="https://developers.google.com/maps/documentation/javascript/cloud-setup"
+							class="text-white"
+							target="_blank"
+							>these instructions</a
+						>.
+					</div>
+					<button
+						type="button"
+						class="btn-close btn-close-white m-2"
+						data-bs-dismiss="toast"
+						aria-label="Close"
+					></button>
+				</div>
+			</div>
+		</div>
+
+		<footer class="page-footer">
+			<span>made by </span>
+			<a href="https://georgemartsoukos.com/" target="_blank">
+				<img
+					width="24"
+					height="24"
+					src="https://assets.codepen.io/162656/george-martsoukos-small-logo.svg"
+					alt="George Martsoukos logo"
+				/>
+			</a>
+		</footer>
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBSJRUNeSfHkH_ChC38jKTvjc2V7QQcOYs&language=en&callback=initMap"
+			async
+		></script>
+		<script src="main.js"></script>
+	</body>
+</html>
